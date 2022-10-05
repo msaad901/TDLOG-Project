@@ -1,3 +1,3 @@
 # TDLOG-Project
 
-Welcom everyone
+Welcome everyone
