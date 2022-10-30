@@ -1,11 +1,11 @@
-
+import unittest
 class Weapon:
     def __init__(self,ammunitions,range):
         self.amo=ammunitions
         self.range=range
 
     def fire_at(self,x,y,z):
-        print("fire_at(",x,",",y,",",z,")")
+        return "fire_at(",x,",",y,",",z,")"
 
 
 class Lance_missiles_antisurface(Weapon):
@@ -14,10 +14,10 @@ class Lance_missiles_antisurface(Weapon):
 
     def fire_at(self,x,y,z):
         if self.amo==0:
-            print("NoAmmunitionError")
+            return "NoAmmunitionError"
 
         elif z!=0:
-            print("OutOfRangeError")
+            return "OutOfRangeError"
             self.amo-=1
         else:
             super().fire_at(x,y,z)
@@ -29,10 +29,10 @@ class Lance_missiles_antiair(Weapon):
 
     def fire_at(self,x,y,z):
         if self.amo==0:
-            print("NoAmmunitionError")
+            return "NoAmmunitionError"
 
         elif z<=0:
-            print("OutOfRangeError")
+            return "OutOfRangeError"
             self.amo-=1
         else:
             super().fire_at(x,y,z)
@@ -45,22 +45,14 @@ class Lance_torpilles(Weapon):
 
     def fire_at(self,x,y,z):
         if self.amo==0:
-            print("NoAmmunitionError")
+            return "NoAmmunitionError"
 
         elif z>0:
-            print("OutOfRangeError")
             self.amo-=1
+            return "OutOfRangeError"
+            
         else:
             super().fire_at(x,y,z)
-
-
-lance_mi_anti_sur=Lance_missiles_antisurface()
-lance_torp=Lance_torpilles()
-lance_mi_anti_air=Lance_missiles_antiair()
-
-lance_mi_anti_air.fire_at(5,7,5)
-lance_torp.fire_at(10,-4,5)
-lance_mi_anti_sur.fire_at(100,45,0)
 
 
     
