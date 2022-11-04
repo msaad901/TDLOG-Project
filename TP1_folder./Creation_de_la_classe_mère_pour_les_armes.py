@@ -4,4 +4,4 @@ class Weapon:
         self.range=range
 
     def fire_at(self,x,y,z):
-        print("fire_at(",x,",",y,",",z,")")
+        return "fire_at("+str(x)+","+str(y)+","+str(z)+")"
