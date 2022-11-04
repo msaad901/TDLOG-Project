@@ -1,0 +1,16 @@
+class Lance_missiles_antisurface(Weapon):
+    def __init__(self,ammunitions=30,range=40):
+        super().__init__(ammunitions,range)
+
+
+class Lance_missiles_antiair(Weapon):
+
+    def __init__(self,ammunitions=40,range=50):
+        super().__init__(ammunitions,range)
+
+
+class Lance_torpilles(Weapon):
+
+    def __init__(self,ammunitions=20,range=15):
+        super().__init__(ammunitions,range)
+
