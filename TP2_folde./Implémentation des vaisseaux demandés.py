@@ -6,9 +6,9 @@ class Cruiser(Vessel):
 
     def go_to(self,x,y,z):
         if z>0:
-            print("I can't go higher")
+            return "I can't go higher"
         elif z<0:
-            print("I can't go lower")
+            return "I can't go lower"
         else:
             super().go_to(x,y,z)
 
@@ -24,7 +24,7 @@ class Submarine(Vessel):
 
     def go_to(self,x,y,z):
         if z!=0 or z!=1:
-            print("I can't go there")
+            return "I can't go there"
         else:
             super().go_to(x,y,z)
 
@@ -41,7 +41,7 @@ class Fregate(Vessel):
 
     def go_to(self,x,y,z):
         if z!=0:
-            print("I can't go there")
+            return "I can't go there"
         else:
             super().go_to(x,y,z)
 
@@ -58,7 +58,7 @@ class Destroyer(Vessel):
 
     def go_to(self,x,y,z):
         if z!=0:
-            print("I can't go there")
+            return "I can't go there"
         else:
             super().go_to(x,y,z)
 
@@ -75,7 +75,7 @@ class Aircraft(Vessel):
 
     def go_to(self,x,y,z):
         if z!=1:
-            print("I can't go there")
+            return "I can't go there"
         else:
             super().go_to(x,y,z)
 
