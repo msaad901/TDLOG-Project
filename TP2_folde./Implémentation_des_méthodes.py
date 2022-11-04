@@ -9,16 +9,17 @@ class Vessel:
 
     def go_to(self,x,y,z):
         if self.max_hits==0:
-            print('DestroyedError')
+            return('DestroyedError')
         else:
-            print("I go to (",x,",",y,",",z,")")
+            
             self.coord=(x,y,z)
+            return "I go to ("+str(x)+","+str(y)+","+str(z)+")"
     
     def get_coordinates(self):
         print(self.coord)
 
     def fire_at(self,x,y,z):
         if self.max_hits==0:
-            print('DestroyedError')
+            return 'DestroyedError'
         else:
             return self.weapon.fire_at(x,y,z)
