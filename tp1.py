@@ -5,7 +5,7 @@ class Weapon:
         self.range=range
 
     def fire_at(self,x,y,z):
-        print("fire_at(",x,",",y,",",z,")")
+        return "fire_at("+str(x)+","+str(y)+","+str(z)+")"
 
 
 class Lance_missiles_antisurface(Weapon):
@@ -14,10 +14,10 @@ class Lance_missiles_antisurface(Weapon):
 
     def fire_at(self,x,y,z):
         if self.amo==0:
-            print("NoAmmunitionError")
+            return "NoAmmunitionError"
 
         elif z!=0:
-            print("OutOfRangeError")
+            return "OutOfRangeError"
             self.amo-=1
         else:
             super().fire_at(x,y,z)
@@ -29,10 +29,10 @@ class Lance_missiles_antiair(Weapon):
 
     def fire_at(self,x,y,z):
         if self.amo==0:
-            print("NoAmmunitionError")
+            return "NoAmmunitionError" 
 
         elif z<=0:
-            print("OutOfRangeError")
+            return "OutOfRangeError"
             self.amo-=1
         else:
             super().fire_at(x,y,z)
@@ -45,10 +45,10 @@ class Lance_torpilles(Weapon):
 
     def fire_at(self,x,y,z):
         if self.amo==0:
-            print("NoAmmunitionError")
+            return "NoAmmunitionError"
 
         elif z>0:
-            print("OutOfRangeError")
+            return "OutOfRangeError"
             self.amo-=1
         else:
             super().fire_at(x,y,z)
