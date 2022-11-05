@@ -1,4 +1,4 @@
-from tp1 import *
+from TP1_folder./Creation_des_3_classes_armes import *
 
 class Cruiser(Vessel):
     def __init__(self,coordinates,weapon,max_hits=6):
