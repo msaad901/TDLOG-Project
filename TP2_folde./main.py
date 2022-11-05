@@ -1,7 +1,12 @@
 
-
-
-
+Lance_missiles_antiair
+Lance_torpilles
+Lance_missiles_antisurface
+Cruiser
+Submarine
+Fregate
+Destroyer
+Aircraft
 Anti_air=Lance_missiles_antiair()
 lance_torpilles_1=Lance_torpilles()
 lance_missiles_anti_surface_1=Lance_missiles_antisurface()
