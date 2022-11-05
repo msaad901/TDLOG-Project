@@ -1,11 +1,11 @@
 from tp1 import Lance_missiles_antiair
 from tp1 import Lance_torpilles
 from tp1 import Lance_missiles_antisurface
-from Creation_des_classes_vaisseaux_demandés import Cruiser
-from Creation_des_classes_vaisseaux_demandés import Submarine
-from Creation_des_classes_vaisseaux_demandés import Fregate
-from Creation_des_classes_vaisseaux_demandés import Destroyer
-from Creation_des_classes_vaisseaux_demandés import Aircraft
+from Creation_des_classes_vaisseaux_demandes import Cruiser
+from Creation_des_classes_vaisseaux_demandes import Submarine
+from Creation_des_classes_vaisseaux_demandes import Fregate
+from Creation_des_classes_vaisseaux_demandes import Destroyer
+from Creation_des_classes_vaisseaux_demandes import Aircraft
 
 from unittest import TestCase
 
