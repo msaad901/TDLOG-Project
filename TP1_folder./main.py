@@ -1,3 +1,7 @@
+Lance_missiles_antisurface
+Lance_torpilles
+Lance_missiles_antiair
+
 lance_mi_anti_sur=Lance_missiles_antisurface()
 lance_torp=Lance_torpilles()
 lance_mi_anti_air=Lance_missiles_antiair()
