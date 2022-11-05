@@ -1,7 +1,7 @@
 
-from tp1 import Lance_missiles_antiair
-from tp1 import Lance_torpilles
-from tp1 import Lance_missiles_antisurface
+from TP1 import Lance_missiles_antiair
+from TP1 import Lance_torpilles
+from TP1 import Lance_missiles_antisurface
 from Creation_des_classes_vaisseaux_demandes import Cruiser
 from Creation_des_classes_vaisseaux_demandes import Submarine
 from Creation_des_classes_vaisseaux_demandes import Fregate
