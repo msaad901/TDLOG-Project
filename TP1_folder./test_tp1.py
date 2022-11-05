@@ -1,5 +1,7 @@
 
-import Weapon from tp1
+from Creation_des_3_classes_armes import Lance_missiles_antisurface
+from Creation_des_3_classes_armes import Lance_torpilles
+from Creation_des_3_classes_armes import Lance_missiles_antiair
 
 from unittest import TestCase
 
