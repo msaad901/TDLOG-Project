@@ -1,6 +1,6 @@
-Lance_missiles_antisurface
-Lance_torpilles
-Lance_missiles_antiair
+from Creation_des_3_classes_armes import Lance_missiles_antisurface
+from Creation_des_3_classes_armes import Lance_torpilles
+from Creation_des_3_classes_armes import Lance_missiles_antiair
 
 lance_mi_anti_sur=Lance_missiles_antisurface()
 lance_torp=Lance_torpilles()
