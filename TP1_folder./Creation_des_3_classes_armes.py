@@ -1,5 +1,4 @@
-
-
+from Creation_de_la_classe_mère_pour_les_armes import *
 
 class Lance_missiles_antisurface(Weapon):
     def __init__(self,ammunitions=30,range=40):
