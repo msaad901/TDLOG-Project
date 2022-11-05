@@ -1,12 +1,15 @@
 
-Lance_missiles_antiair
-Lance_torpilles
-Lance_missiles_antisurface
-Cruiser
-Submarine
-Fregate
-Destroyer
-Aircraft
+from tp1 import Lance_missiles_antiair
+from tp1 import Lance_torpilles
+from tp1 import Lance_missiles_antisurface
+from Creation_des_classes_vaisseaux_demandés import Cruiser
+from Creation_des_classes_vaisseaux_demandés import Submarine
+from Creation_des_classes_vaisseaux_demandés import Fregate
+from Creation_des_classes_vaisseaux_demandés import Destroyer
+from Creation_des_classes_vaisseaux_demandés import Aircraft
+
+
+
 Anti_air=Lance_missiles_antiair()
 lance_torpilles_1=Lance_torpilles()
 lance_missiles_anti_surface_1=Lance_missiles_antisurface()
